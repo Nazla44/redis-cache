@@ -1,15 +1,3 @@
-"""
-weather_api.py
-
-Implementasi caching sederhana menggunakan Redis untuk menyimpan hasil API call.
-
-Alur:
-1. Cek cache Redis terlebih dahulu berdasarkan nama kota.
-2. Jika cache ada, data langsung dikembalikan dari Redis sehingga cepat.
-3. Jika cache tidak ada, lakukan API call yang disimulasikan lambat selama 2 detik.
-4. Simpan hasil API call ke Redis dengan expire 300 detik atau 5 menit.
-"""
-
 import json
 import os
 import time
